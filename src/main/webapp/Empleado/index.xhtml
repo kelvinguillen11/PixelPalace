@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: kelvi
+  Date: 17/3/2024
+  Time: 19:37
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+<h:head>
+    <title>Pixel Palace</title>
+    <h:outputStylesheet name="css/bootstrap-5.3.3-dist/css/bootstrap.css"/>
+    <h:outputStylesheet name="css-custom/Index.css"/>
+</h:head>
+
+<h:body styleClass="fondo"  style="background-image: url('../resources/img/Fondo-Index.jpeg');">
+    <ui:include src="Header.xhtml">
+
+    </ui:include>
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center" >
+        <div class="card p-4 text-light mb-5" style="background-color: transparent; filter: blur(0.1px); z-index: 100;">
+                <div class="card-header">
+                    <h2>Iniciar Sesion</h2>
+                </div>
+            <div class="card-body w-100">
+                    <h:form>
+                        <div class="input-group form-group mt-3">
+                           <div class="ui-inputgroup-addon bg-secondary rounded-start">
+                                <i class="pi pi-user mt-2 p-1"></i>
+                           </div>
+                            <p:inputText  styleClass="form-control" placeholder="usuario"/>
+                        </div>
+                        <div class="input-group form-group mt-3">
+                            <div class="ui-inputgroup-addon bg-secondary rounded-start">
+                                <i class="pi pi-key mt-2 p-1"></i>
+                            </div>
+                            <p:password styleClass="form-control" placeholder="Contraseña"/>
+                        </div>
+
+                        <div class="form-group mt-3">
+                                    <h:commandButton  value="Acceder" action="Hola-mundo" styleClass="btn bg-secondary float-end text-white w-100"/>
+                        </div>
+                    </h:form>
+            </div>
+            <div class="card-footer">
+            <div class="d-flex justify-content-center">
+                <div class="text-light">Si es un usuario registrado, inicie sesión aquí.</div>
+            </div>
+        </div>
+        </div>
+    </div>
+</h:body>
+<ui:include src="footer.xhtml"></ui:include>
+</html>

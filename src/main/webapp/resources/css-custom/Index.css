@@ -1,0 +1,14 @@
+
+.fondo{
+    background-position: center;
+    background-size: cover;
+}
+
+.container-main{
+    background-color: transparent !important;
+}
+.container-login{
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(3px);
+    z-index: 12;
+}

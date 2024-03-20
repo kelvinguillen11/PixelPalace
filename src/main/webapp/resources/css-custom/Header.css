@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    height: 6.25rem;
+}
+.container-logo{
+    width:60px;
+    height:60px;
+}
+
+.img-header{
+    width:100% !important;
+    height:100% !important;
+    overflow: hidden;
+}
