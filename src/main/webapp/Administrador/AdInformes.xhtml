@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Carlos
+  Date: 21/3/2024
+  Time: 02:32
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Generación de Informes - Pixel Palace</title>
+    <h:outputStylesheet name="css/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <h:outputStylesheet name="css-custom/Index.css" />
+</h:head>
+
+<h:body class="fondo" style="background-image: url('../resources/img/Fondo-Index.jpeg');">
+    <ui:include src="Header.xhtml" />
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" style="color: white;">Generación de Informes</h1>
+
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="tipoInforme" class="form-label">Tipo de Informe:</label>
+                <select id="tipoInforme" class="form-select">
+                    <option value="ventas">Informe de Ventas</option>
+                    <option value="empleados">Informe de Empleados</option>
+                    <option value="productos">Informe de Productos</option>
+
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <button class="btn btn-primary">Generar Informe</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+
+                <p>El informe se mostrará aquí...</p>
+            </div>
+        </div>
+    </div>
+
+    <ui:include src="footer.xhtml" />
+</h:body>
+</html>

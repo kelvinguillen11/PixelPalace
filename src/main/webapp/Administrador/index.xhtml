@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Carlos
+  Date: 21/3/2024
+  Time: 12:00
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Pixel Palace - Panel de Control del Administrador</title>
+    <h:outputStylesheet name="css/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <h:outputStylesheet name="css-custom/Carts.css" />
+</h:head>
+
+<h:body class="fondo" style="background-image: url('../resources/img/Fondo-Index.jpeg');">
+    <ui:include src="Header.xhtml" />
+
+
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" style="color: white;">Panel de Control del Administrador</h1>
+        <div class="row row-cols-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionEmpleados.png" alt="Imagen 1"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Gestión de Empleados</p>
+                        <a href="AdEmpleado.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionProducto.png" alt="Imagen 2"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Gestión de Productos</p>
+                        <a href="AdProducto.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionVentas.png" alt="Imagen 3"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Gestión de Ventas</p>
+                        <a href="AdVentas.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionInformes.png" alt="Imagen 4"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Generación de Informes</p>
+                        <a href="AdInformes.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionDevolucion.png" alt="Imagen 5"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Gestión de Solicitudes de Devolución</p>
+                        <a href="AdDevoluciones.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionDepartamento.png" alt="Imagen 6"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Administración de Departamentos</p>
+                        <a href="AdDepartamentos.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="../resources/img/GestionProveedores.png" alt="Imagen 7"/>
+                    <div class="card-body text-center">
+                        <p class="card-text">Gestión de Proveedores</p>
+                        <a href="AdProveedores.xhtml" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ui:include src="footer.xhtml" />
+</h:body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Carlos
+  Date: 21/3/2024
+  Time: 02:42
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Gestión de Ventas - Pixel Palace</title>
+    <h:outputStylesheet name="css/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <h:outputStylesheet name="css-custom/Index.css" />
+</h:head>
+
+<h:body class="fondo" style="background-image: url('../resources/img/Fondo-Index.jpeg');">
+    <ui:include src="Header.xhtml" />
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" style="color: white;">Gestión de Ventas</h1>
+
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <button class="btn btn-success">Nueva Venta</button>
+            </div>
+        </div>
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Cliente</th>
+                <th>Producto(s)</th>
+                <th>Total</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Cliente A</td>
+                <td>Producto 1, Producto 2</td>
+                <td>$50.00</td>
+                <td>2024-03-25</td>
+                <td>
+                    <button class="btn btn-warning">Detalles</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <ui:include src="footer.xhtml" />
+</h:body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Gestión de Empleados - Pixel Palace</title>
+    <h:outputStylesheet name="css/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <h:outputStylesheet name="css-custom/Index.css" />
+</h:head>
+
+<h:body class="fondo" style="background-image: url('../resources/img/Fondo-Index.jpeg');">
+    <ui:include src="Header.xhtml" />
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" style="color: white;">Gestión de Empleados</h1>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar Empleado"/>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+        </div>
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Puesto</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Empleado 1</td>
+                <td>Cajero</td>
+                <td>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <ui:include src="footer.xhtml" />
+</h:body>
+</html>
