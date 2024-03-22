@@ -36,17 +36,17 @@
                            <div class="ui-inputgroup-addon bg-secondary rounded-start">
                                 <i class="pi pi-user mt-2 p-1"></i>
                            </div>
-                            <p:inputText  styleClass="form-control" placeholder="usuario"/>
+                            <p:inputText  styleClass="form-control" placeholder="usuario" value="#{loginBean.usuario}"/>
                         </div>
                         <div class="input-group form-group mt-3">
                             <div class="ui-inputgroup-addon bg-secondary rounded-start">
                                 <i class="pi pi-key mt-2 p-1"></i>
                             </div>
-                            <p:password styleClass="form-control" placeholder="Contraseña"/>
+                            <p:password styleClass="form-control" placeholder="Contraseña" value="#{loginBean.password}"/>
                         </div>
 
                         <div class="form-group mt-3">
-                                    <h:commandButton  value="Acceder" action="Hola-mundo" styleClass="btn bg-secondary float-end text-white w-100"/>
+                                    <h:commandButton  value="Acceder" action="#{loginBean.validateLogin()}" styleClass="btn bg-secondary float-end text-white w-100"/>
                         </div>
                     </h:form>
             </div>
